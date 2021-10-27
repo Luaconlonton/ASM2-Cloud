@@ -17,7 +17,7 @@ app.get('/insert', function (req, res) {
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb+srv://chillchill:chillchill@cluster0.5zyj3.mongodb.net/test";
+var url = "mongodb+srv://chillchill:chillshop@cluster0.5zyj3.mongodb.net/test";
 app.post('/doRegister', async (req, res) => {
     let client = await MongoClient.connect(url);
     let inputName = req.body.txtName;
