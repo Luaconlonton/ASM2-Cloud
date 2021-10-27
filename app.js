@@ -48,5 +48,5 @@ app.get('/remove', async (req, res) => {
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running in 3000 port");
-});
+})
 
